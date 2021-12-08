@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 10px 10px 10px 10px #ccc;
+    padding: 1rem 2rem;
+    align-items: center;
+    background-color: white;
+}
+nav span{
+    font-size: 1.5rem;
+}
+nav div{
+    position: relative;
+}
+nav div img{
+    width: 30px;
+}
+nav div span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    align-items: center;
+    top: -5px;
+    left: 25px;
+}
+
+
+main{
+    padding: 2rem 10rem;
+}
+
+
+main h1{
+    text-align: center;
+    font-size: 1.5rem 1rem;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+main section div.card{
+    margin: 1rem;
+    width: 20%;
+    padding-bottom: -10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: hidden;
+    transition: .2s ease-in-out;
+}
+
+main section div.card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px 10px #ccc;
+
+}
+
+div.card img{
+    width: 100%;
+}
+div.card h3, p{
+    margin: 0.5rem;
+}
+
+div.card button{
+    margin: 0.5rem;
+    width: 75%;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: #f11;
+    color: white;
+    padding: 0.5rem;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+div.card button:hover{
+    font-size: 1.01rem;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
